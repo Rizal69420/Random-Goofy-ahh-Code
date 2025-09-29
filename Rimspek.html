@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="buttonContainer"></div>
+    <script>
+       let rizz = "f to pay respect 🙏";
+       let f = "my dih";
+       document.write("please press " + rizz);
+
+       // 1. Create the button element
+        var newButton = document.createElement("button");
+
+        // 2. Set button properties
+        newButton.id = "dynamicButton";
+        newButton.textContent = "please save my dih";
+
+        // 3. Append the button to the DOM
+        var container = document.getElementById("buttonContainer");
+        container.appendChild(newButton);
+
+        // 4. Add an event listener
+        newButton.addEventListener("click", function() {
+            alert("my dih");
+        });
+
+        document.addEventListener('keydown', function(event) {
+        // Check if the pressed key is 'F' (or any other key you desire)
+        if (event.key === 'f' || event.key === 'F') { // Case-insensitive check
+            // Option 1: Using a simple alert box
+            alert('thank you for paying respect 🙏');
+
+            // Option 2: Showing a custom HTML popup
+            // document.getElementById('customPopup').style.display = 'block';
+        }
+    });
+    </script>
+</body>
+</html>
